@@ -1,5 +1,6 @@
+
 /*
-// Configuração do banco de dados no ambiente de teste
+// Configuração do bando de dados no ambiente de teste
 export const databaseConfig = {
   dialect: 'sqlite',
   storage: 'database.sqlite',
@@ -11,9 +12,8 @@ export const databaseConfig = {
 };
 */
 
-
 /*
-// Configuração do banco de dados no ambiente de desenvolvimento
+// Configuração do bando de dados no ambiente de desenvolvimento
 export const databaseConfig = {
   dialect: 'postgres',
   host: 'localhost',
@@ -24,17 +24,15 @@ export const databaseConfig = {
     timestamps: true,
     freezeTableName: true,
     underscored: true
-  }
+  },
 };
 */
 
 
-/*
-// Configuração do banco de dados no ambiente de produção
+// Configuração do bando de dados no ambiente de produção
 export const databaseConfig = {
   dialect: 'postgres',
   host: 'dpg-cglocp87oslael4n1oq0-a.oregon-postgres.render.com',
-  //host: '35.227.164.209',
   username: 'scv_backend_node_sequelize_deploy_user',
   password: 'nVn7xdMp5QHiE0AlhlI06RXwUpwkCE8a',
   database: 'scv_backend_node_sequelize_deploy',
@@ -42,8 +40,8 @@ export const databaseConfig = {
     timestamps: true,
     freezeTableName: true,
     underscored: true
+  },
+  dialectOptions: {
+    ssl: true
   }
 };
-*/
-
-export const databaseConfig = 'postgres://scv_backend_node_sequelize_deploy_user:nVn7xdMp5QHiE0AlhlI06RXwUpwkCE8a@dpg-cglocp87oslael4n1oq0-a.oregon-postgres.render.com/scv_backend_node_sequelize_deploy?sslmode=no-verify'
